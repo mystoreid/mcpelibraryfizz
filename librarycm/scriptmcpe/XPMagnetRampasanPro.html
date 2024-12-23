@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="dark" data-color-theme="Orange_Theme" data-layout="horizontal">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="https://cdn.mcblibrary.com/files/logo/mcblibrary-logo.png" />
+  <link rel="stylesheet" href="https://mcblibraryfiz.rajasuntik.my.id/assets/css/styles.css" />
+
+    <title>custom command | MCB Library</title>
+  <meta property="og:title" content="custom command | MCB Library" />
+  <meta property="og:site_name" content="MCB Library">
+  <meta property="og:description" content="The Custom Command Addon for MCPE is a plugin or modification that allows players to add and use custom commands within the game." />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://cdn.mcblibrary.com/files/scripts/kW3I8MaaqLHbeeHGQLlfWVYv2hGDCUx9Tgzyadm2.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://cdn.mcblibrary.com/files/scripts/kW3I8MaaqLHbeeHGQLlfWVYv2hGDCUx9Tgzyadm2.png" />
+
+  <meta name="theme-color" content="#f6871f">
+  <meta name="google-adsense-account" content="ca-pub-1885493328332484">
+  <link rel="stylesheet" href="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/owl.carousel/disthttps://mcblibraryfiz.rajasuntik.my.id/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/dropzone/dist/min/dropzone.min.css">
+  <link rel="stylesheet" href="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/quill/dist/quill.snow.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const theme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-bs-theme', theme);
+    });
+  </script>
+</head><body>
+    <div class="preloader">
+        <img src="https://cdn.mcblibrary.com/files/logo/mcblibrary-logo.png" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <div id="main-wrapper">
+        <aside class="left-sidebar with-vertical">
+  <div><!-- ---------------------------------- -->
+    <!-- Start Vertical Layout Sidebar -->
+    <!-- ---------------------------------- -->
+    <div class="brand-logo d-flex align-items-center justify-content-between">
+        <a href="/" class="text-nowrap logo-img">
+            <img src="https://mcblibraryfiz.rajasuntik.my.id/assets/images/logos/mcblibrary-logo-text.png" class="dark-logo" width="180" alt="mcblibrary-img" />
+            <img src="https://mcblibraryfiz.rajasuntik.my.id/assets/images/logos/mcblibrary-logo-text.png" class="light-logo" width="180" alt="mcblibrary-img" />
+        </a>
+      <a href="javascript:void(0)" class="sidebartoggler ms-auto text-decoration-none fs-5 d-block d-xl-none">
+        <i class="fas fa-home"></i>
+      </a>
+    </div>
+
+
+    <nav class="sidebar-nav scroll-sidebar" data-simplebar>
+      <ul id="sidebarnav">
+        <!-- ---------------------------------- -->
+        <!-- Dashboard -->
+        <!-- ---------------------------------- -->
+        <li class="sidebar-item mt-4">
+            <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id" id="get-url" aria-expanded="false">
+              <span>
+                <i class="fas fa-home"></i>
+              </span>
+              <span class="hide-menu">Home</span>
+            </a>
+        </li>
+                <li class="sidebar-item">
+          <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+            <span>
+                <i class="fas fa-folder"></i>
+              </span>
+            <span class="hide-menu">Library</span>
+          </a>
+          <ul aria-expanded="false" class="collapse first-level">
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/textures.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-archive"></i>
+                </div>
+                <span class="hide-menu">Textures</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/addons.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-code"></i>
+                </div>
+                <span class="hide-menu">Addons</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/scriptsmcpe.html" class="sidebar-link">
+                <i class="fas fa-code"></i>
+                <span class="hide-menu">Scripts</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/plugins.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-code"></i>
+                </div>
+                <span class="hide-menu">Plugins</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/scripts.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-code"></i>
+                </div>
+                <span class="hide-menu">Scripts Bot Whatsapp</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/mod.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-box"></i>
+                </div>
+                <span class="hide-menu">Mod Apk</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/maps.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-box"></i>
+                </div>
+                <span class="hide-menu">Maps</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/shaders.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-box"></i>
+                </div>
+                <span class="hide-menu">Shaders</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/skins.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-box"></i>
+                </div>
+                <span class="hide-menu">Skins</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/mcpe.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-box"></i>
+                </div>
+                <span class="hide-menu">Mcpe Apk</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id/tool.html" aria-expanded="false">
+            <span>
+              <i class="fas fa-tools"></i>
+            </span>
+            <span class="hide-menu">Tool</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id/wiki.html" aria-expanded="false">
+            <span>
+              <i class="fas fa-book"></i>
+            </span>
+            <span class="hide-menu">Wiki</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id/faq.html" aria-expanded="false">
+            <span>
+              <i class="fas fa-help"></i>
+            </span>
+            <span class="hide-menu">FAQ</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id/about-us.html" aria-expanded="false">
+            <span>
+              <i class="fas fa-address-book"></i>
+            </span>
+            <span class="hide-menu">About US</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id/support.html" aria-expanded="false">
+            <span>
+              <i class="fas fa-lifebuoy"></i>
+            </span>
+            <span class="hide-menu">Support</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id/terms.html" aria-expanded="false">
+            <span>
+              <i class="fas fa-notebook"></i>
+            </span>
+            <span class="hide-menu">Terms</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+      </div>
+</aside>        <div class="page-wrapper">
+            <header class="topbar">
+  <div class="with-vertical"><!-- ---------------------------------- -->
+    <!-- Start Vertical Layout Header -->
+    <!-- ---------------------------------- -->
+    <nav class="navbar navbar-expand-lg p-0">
+      <ul class="navbar-nav">
+        <li class="nav-item nav-icon-hover-bg rounded-circle ms-n2">
+          <a class="nav-link sidebartoggler" id="headerCollapse" href="javascript:void(0)">
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="d-block d-lg-none py-3">
+          <a href="https://mcblibraryfiz.rajasuntik.my.id" class="text-nowrap logo-img">
+              <img src="https://mcblibraryfiz.rajasuntik.my.id/assets/images/logos/mcblibrary-logo-text.png" class="dark-logo" width="160" alt="mcblibrary-img" />
+              <img src="https://mcblibraryfiz.rajasuntik.my.id/assets/images/logos/mcblibrary-logo-text.png" class="light-logo" width="160" alt="mcblibrary-img" />
+          </a>
+      </div>
+      <a class="navbar-toggler nav-icon-hover-bg rounded-circle p-0 mx-0 border-0" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-dots fs-7"></i>
+      </a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="d-flex align-items-center justify-content-between">
+          <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
+            <li class="nav-item nav-icon-hover-bg rounded-circle">
+              <a class="nav-link moon dark-layout" href="javascript:void(0)">
+                <i class="fas fa-moon moon"></i>
+              </a>
+              <a class="nav-link sun light-layout" href="javascript:void(0)">
+                <i class="fas fa-sun sun"></i>
+              </a>
+            </li>
+                        <li class="nav-item mx-2">
+              <div class="nav-link">
+                <a class="btn btn-primary" href="/auth/login">Sign In</a>
+              </div>
+            </li>
+                      </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ---------------------------------- -->
+    <!-- End Vertical Layout Header -->
+    <!-- ---------------------------------- -->
+
+  </div>
+  <div class="app-header with-horizontal">
+    <nav class="navbar navbar-expand-xl container-fluid p-0">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item nav-icon-hover-bg rounded-circle d-flex d-xl-none ms-n2">
+          <a class="nav-link sidebartoggler" id="sidebarCollapse" href="javascript:void(0)">
+            <i class="fas fa-menu-2"></i>
+          </a>
+        </li>
+        <li class="nav-item d-none d-xl-block">
+          <a href="/" class="text-nowrap nav-link">
+            <img src="/https://mcblibraryfiz.rajasuntik.my.idassets/images/logos/mcblibrary-logo-text.png" class="dark-logo" width="180" alt="mcblibrary-img" />
+            <img src="https://mcblibraryfiz.rajasuntik.my.id/assets/images/logos/mcblibrary-logo-text.png" class="light-logo" width="180" alt="mcblibrary-img" />
+          </a>
+        </li>
+      </ul>
+      <div class="d-block d-xl-none">
+        <a href="/horizontal/index.html" class="text-nowrap nav-link">
+          <img src="https://mcblibraryfiz.rajasuntik.my.id/assets/images/logos/dark-logo.svg" width="180" alt="mcblibrary-img" />
+        </a>
+      </div>
+      <a class="navbar-toggler nav-icon-hover-bg rounded-circle p-0 mx-0 border-0" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="p-2">
+          <i class="fas fa-dots fs-7"></i>
+        </span>
+      </a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="d-flex align-items-center justify-content-between px-0 px-xl-8">
+          <a href="javascript:void(0)" class="nav-link round-40 p-1 ps-0 d-flex d-xl-none align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobilenavbar" aria-controls="offcanvasWithBothOptions">
+            <i class="fas fa-align-justified fs-7"></i>
+          </a>
+          <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
+            <li class="nav-item nav-icon-hover-bg rounded-circle">
+              <a class="nav-link moon dark-layout" href="javascript:void(0)">
+                <i class="fas fa-moon moon"></i>
+              </a>
+              <a class="nav-link sun light-layout" href="javascript:void(0)">
+                <i class="fas fa-sun sun"></i>
+              </a>
+            </li>
+                        <li class="nav-item">
+                <a class="btn btn-primary" href="/auth/login">Sign In</a>
+            </li>
+                      </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<aside class="left-sidebar with-horizontal">
+  <div>
+    <nav id="sidebarnavh" class="sidebar-nav scroll-sidebar container-fluid">
+      <ul id="sidebarnav">
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="/" aria-expanded="false">
+            <span>
+              <i class="fas fa-home"></i>
+            </span>
+            <span class="hide-menu">Home</span>
+          </a>
+        </li>
+                <li class="sidebar-item">
+          <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+            <span>
+                <i class="fas fa-folder"></i>
+              </span>
+            <span class="hide-menu">Library</span>
+          </a>
+          <ul aria-expanded="false" class="collapse first-level">
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/textures.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-archive"></i>
+                </div>
+                <span class="hide-menu">Textures</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/addons.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-code"></i>
+                </div>
+                <span class="hide-menu">Addons</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/plugins.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-code"></i>
+                </div>
+                <span class="hide-menu">Plugins</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/scripts.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-code"></i>
+                </div>
+                <span class="hide-menu">Scripts Bot Whatsapp</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/mod.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-box"></i>
+                </div>
+                <span class="hide-menu">Mod Apk</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/maps.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-box"></i>
+                </div>
+                <span class="hide-menu">Maps</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/shaders.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-box"></i>
+                </div>
+                <span class="hide-menu">Shaders</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/skins.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-box"></i>
+                </div>
+                <span class="hide-menu">Skins</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="https://mcblibraryfiz.rajasuntik.my.id/mcpe.html" class="sidebar-link">
+                <div class="round-16 d-flex align-items-center justify-content-center">
+                  <i class="fas fa-box"></i>
+                </div>
+                <span class="hide-menu">Mcpe Apk</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id/tool.html" aria-expanded="false">
+            <span>
+              <i class="fas fa-tools"></i>
+            </span>
+            <span class="hide-menu">Tool</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id/wiki.html" aria-expanded="false">
+            <span>
+              <i class="fas fa-book"></i>
+            </span>
+            <span class="hide-menu">Wiki</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id/faq.html" aria-expanded="false">
+            <span>
+              <i class="fas fa-help"></i>
+            </span>
+            <span class="hide-menu">FAQ</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id/about-us.html" aria-expanded="false">
+            <span>
+              <i class="fas fa-address-book"></i>
+            </span>
+            <span class="hide-menu">About US</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id/support.html" aria-expanded="false">
+            <span>
+              <i class="fas fa-lifebuoy"></i>
+            </span>
+            <span class="hide-menu">Support</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="https://mcblibraryfiz.rajasuntik.my.id/terms.html" aria-expanded="false">
+            <span>
+              <i class="fas fa-notebook"></i>
+            </span>
+            <span class="hide-menu">Terms</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</aside>            <div class="body-wrapper">
+                <div class="container-fluid">
+                    <div class="card overflow-hidden">
+  <div class="position-relative">
+    <a href="javascript:void(0)">
+      <img src="https://iili.io/2OaYa5P.md.jpg" class="card-img-top rounded-0 object-fit-cover" alt="mcblibrary-img">
+    </a>
+    <span class="badge scripts text-bg-light mb-9 me-9 position-absolute bottom-0 end-0">SCRIPTS</span>
+    <img src="https://cdn.mcblibrary.com/files/pictures/KJmqYLkViK0RuSIiEnkMv14O0PI5We07eyeMsGcE.jpg" alt="mcblibrary-img" class="img-fluid rounded-circle position-absolute bottom-0 start-0 mb-n9 ms-9" width="48" height="48" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Hafiz">
+  </div>
+  <div class="card-body p-4">
+    <h2 class="fs-9 fw-semibold my-4">XP & LOOT MAGNET PRO 🧲[ AUTO PICKUP ] ]</h2>
+    <div class="d-flex align-items-center gap-4">
+      <form id="like-form-3" action="https://mcblibrary.com/library/scripts/mafly/custom-command/like" method="POST" style="display: none;">
+        <input type="hidden" name="_token" value="KB9z6gtTWjwZzmsoqSj8hFboJgoddaZOBGI6Pa5R" autocomplete="off">      </form>
+      <a href="javascript:void(0)" class="d-flex align-items-center gap-2" style="" onclick="event.preventDefault(); document.getElementById('like-form-3').submit();">
+        <i class="fas fa-heart text-dark fs-5" style=""></i>1
+      </a>
+      <div class="d-flex align-items-center fs-2 ms-auto">
+        <i class="fas fa-clock text-dark"></i>23, Oct 2024
+      </div>
+    </div>
+  </div>
+<div class="border-top mt-7 pt-7">
+      <h3 class="fw-semibold mb-2">Supported Versions</h3>
+      <div class="col-12 d-flex align-items-stretchy">
+        <div class="w-100">
+                      <a href="#" class="mb-1 btn btn-primary p-2">1.21.50</a>
+                      <a href="#" class="mb-1 btn btn-primary p-2">1.21.51</a>
+                  </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+  <h3 class="fw-semibold mb-2">Download Versions</h3>
+    <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+        <a class="nav-link active " data-bs-toggle="tab" href="#v1.0" role="tab" aria-selected="true">
+          <span>v1.0</span>
+        </a>
+      </li>
+          </ul>
+    <div class="tab-content">
+            <div class="tab-pane active " id="v1.0" role="tabpanel">
+        <div class="fs-5 p-3">
+          <p>- Ini adalah addon baru jadi tidak ada log perubahan 😂</p>
+        </div>
+        <a href="https://www.mediafire.com/file/isbmo0z4qvdn9yh/xp_and_loot_magnet_pro_by_DtA_MC.mcpack/file" target="_blank" class="btn mb-1 btn-primary">
+          <i class="fas fa-download fs-4 me-2"></i>Download
+        </a>
+      </div>
+  </div>
+</div>
+<div class="card" id="comments">
+  <div class="card-body">
+    <div class="d-flex align-items-center gap-3 mb-4">
+      <h4 class="mb-0">Comments</h4>
+      <span class="badge bg-primary-subtle text-primary fs-4 fw-semibold px-6 py-8 rounded">0</span>
+    </div>
+        <p class="alert alert-warning">
+      Only registered users can leave comments. Please <a href="/auth/login">Login</a>
+    </p>
+            <div class="d-flex align-items-center gap-2">
+                                        </div>
+                      </div>
+          <div class="list-reply" id="list-reply-5" style="display: none;">
+                      </div>
+                  </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const replyButtons = document.querySelectorAll('.reply-button');
+      const cancelButtons = document.querySelectorAll('.cancel-reply');
+
+      replyButtons.forEach(button => {
+          button.addEventListener('click', function() {
+              const closestReplyForm = this.closest('.list-comment').querySelector('.reply-form');
+
+              if (closestReplyForm.style.display === 'none' || closestReplyForm.style.display === '') {
+                  closestReplyForm.style.display = 'block';
+              } else {
+                  closestReplyForm.style.display = 'none';
+              }
+          });
+      });
+
+      cancelButtons.forEach(button => {
+          button.addEventListener('click', function() {
+              const closestReplyForm = this.closest('.list-comment').querySelector('.reply-form');
+
+              closestReplyForm.style.display = 'none';
+          });
+      });
+
+      const replyViewButtons = document.querySelectorAll('.reply-view-button');
+
+      replyViewButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const listReply = document.getElementById(`list-reply-${targetId}`);
+            const icon = this.querySelector('i');
+
+            if (listReply.style.display === 'none' || listReply.style.display === '') {
+                listReply.style.display = 'block';
+                icon.classList.remove('ti-caret-right');
+                icon.classList.add('ti-caret-down');
+            } else {
+                listReply.style.display = 'none';
+                icon.classList.remove('ti-caret-down');
+                icon.classList.add('ti-caret-right');
+            }
+        });
+    });
+    
+    const replyNestedButtons = document.querySelectorAll('.reply-nested-button');
+    const cancelNestedButtons = document.querySelectorAll('.cancel-nested-reply');
+  
+    replyNestedButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const replyNestedForm = this.closest('.p-4').querySelector('.reply-nested-form');
+  
+            if (replyNestedForm.style.display === 'none' || replyNestedForm.style.display === '') {
+                replyNestedForm.style.display = 'block';
+            } else {
+                replyNestedForm.style.display = 'none';
+            }
+        });
+    });
+  
+    cancelNestedButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const replyForm = this.closest('.reply-nested-form');
+  
+            replyForm.style.display = 'none';
+        });
+    });
+  });
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://mcblibraryfiz.rajasuntik.my.id/assets/js/vendor.min.js"></script>
+<!-- Import Js Files -->
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/simplebar/dist/simplebar.min.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/js/theme/app.horizontal.init.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/js/theme/theme.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/js/theme/app.min.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/js/theme/sidebarmenu.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/js/apps/contact.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/js/tinymce/tinymce.min.js"></script>
+<script>
+    tinymce.init({
+        selector: 'textarea#description',
+        height: 700,
+        plugins:[
+            'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
+            'searchreplace', 'wordcount', 'visualblocks', 'code', 'fullscreen', 'insertdatetime', 'media', 
+            'table', 'emoticons', 'template', 'codesample'
+        ],
+        toolbar: 'undo redo | styles | bold italic underline | alignleft aligncenter alignright alignjustify |' + 
+        'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+        'forecolor backcolor emoticons',
+        menubar: 'favs edit view insert format tools table',
+        content_style: 'https://mcblibraryfiz.rajasuntik.my.id/assets/css/styles.css',
+    });
+</script>
+<script>
+    tinymce.init({
+        selector: 'textarea#versions_changelog',
+        height: 300,
+        plugins:[
+            'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
+            'searchreplace', 'wordcount', 'visualblocks', 'code', 'fullscreen', 'insertdatetime', 'media', 
+            'table', 'emoticons', 'template', 'codesample'
+        ],
+        toolbar: 'undo redo | styles | bold italic underline | alignleft aligncenter alignright alignjustify |' + 
+        'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+        'forecolor backcolor emoticons',
+        menubar: 'favs edit view insert format tools table',
+        content_style: 'https://mcblibraryfiz.rajasuntik.my.id/assets/css/styles.css',
+    });
+</script>
+<script>
+    tinymce.init({
+        selector: 'textarea#wiki',
+        height: 700,
+        plugins:[
+            'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
+            'searchreplace', 'wordcount', 'visualblocks', 'code', 'fullscreen', 'insertdatetime', 'media', 
+            'table', 'emoticons', 'template', 'codesample'
+        ],
+        valid_elements: '*[*]',
+        extended_valid_elements: 'script[type|src|language]',
+        toolbar: 'undo redo | styles | bold italic underline | alignleft aligncenter alignright alignjustify |' + 
+        'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+        'forecolor backcolor emoticons',
+        menubar: 'favs edit view insert format tools table',
+        content_style: 'https://mcblibraryfiz.rajasuntik.my.id/assets/css/styles.css',
+    });
+</script>
+<script>
+    tinymce.init({
+        selector: 'textarea#tool',
+        height: 700,
+        plugins:[
+            'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
+            'searchreplace', 'wordcount', 'visualblocks', 'code', 'fullscreen', 'insertdatetime', 'media', 
+            'table', 'emoticons', 'template', 'codesample'
+        ],
+        valid_elements: '*[*]',
+        extended_valid_elements: 'script[type|src|language]',
+        toolbar: 'undo redo | styles | bold italic underline | alignleft aligncenter alignright alignjustify |' + 
+        'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+        'forecolor backcolor emoticons',
+        menubar: 'favs edit view insert format tools table',
+        content_style: 'https://mcblibraryfiz.rajasuntik.my.id/assets/css/styles.css',
+    });
+</script>
+<script>
+      function getAverageRGB(imgEl) {
+        var blockSize = 5,
+          defaultRGB = { r: 0, g: 0, b: 0 },
+          canvas = document.createElement('canvas'),
+          context = canvas.getContext && canvas.getContext('2d'),
+          data, width, height,
+          i = -4,
+          length,
+          rgb = { r: 0, g: 0, b: 0 },
+          count = 0;
+
+        if (!context) {
+          return defaultRGB;
+        }
+
+        height = canvas.height = imgEl.naturalHeight || imgEl.offsetHeight || imgEl.height;
+        width = canvas.width = imgEl.naturalWidth || imgEl.offsetWidth || imgEl.width;
+        context.drawImage(imgEl, 0, 0);
+
+        try {
+          data = context.getImageData(0, 0, width, height);
+        } catch (e) {
+          return defaultRGB;
+        }
+
+        length = data.data.length;
+        while ((i += blockSize * 4) < length) {
+          count++;
+          rgb.r += data.data[i];
+          rgb.g += data.data[i + 1];
+          rgb.b += data.data[i + 2];
+        }
+
+        rgb.r = ~~(rgb.r / count);
+        rgb.g = ~~(rgb.g / count);
+        rgb.b = ~~(rgb.b / count);
+
+        return rgb;
+      }
+
+      async function processSkinColors() {
+        const skins = document.querySelectorAll('img[data-skin-id]');
+        
+        for (let img of skins) {
+          let blob = await fetch(img.getAttribute('data-skin-url')).then(r => r.blob());
+          let dataUrl = await new Promise(resolve => {
+            let reader = new FileReader();
+            reader.onload = () => resolve(reader.result);
+            reader.readAsDataURL(blob);
+          });
+
+          let tempImg = document.createElement('img');
+          tempImg.onload = function() {
+            var rgb = getAverageRGB(tempImg);
+            let rgbText = 'rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')';
+            img.style.backgroundColor = rgbText;
+          }
+          tempImg.src = dataUrl;
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', processSkinColors);
+</script>
+
+<!-- solar icons -->
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/js/dashboards/dashboard.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/quill/dist/quill.min.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/js/forms/quill-init.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/select2/dist/js/select2.full.min.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/select2/dist/js/select2.min.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/js/forms/select2.init.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/jquery.repeater/jquery.repeater.min.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="https://mcblibraryfiz.rajasuntik.my.id/assets/js/forms/repeater-init.js"></script>
+</body>
+</html>
